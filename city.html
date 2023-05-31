@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Makarov Ivan in WDD 230:
+                                    Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>City</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="js/script.js" defer></script>
+    <script src="js/prestonBanner.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+    <script src="js/weatherAPIsHome.js" defer></script>
+    <script src="js/wheatherApiPreston.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-commerce.png" alt="The MChamber of Commerce logo" />
+      <section class="headings">
+        <h1>Welcom to our Chamber of Commerce</h1>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="heroImg">
+        <img class="imgWidth" src="images/snowMinsk.jpg" alt="The city photo" />
+      </div>
+      <h2>Minsk - city where success awaits you!</h2>
+      <p class="shadow decorationParagraph">
+        Minsk is the capital and the largest city of Belarus, located on the Svislach and the now subterranean
+        Niamiha rivers. As the capital, Minsk has a special administrative status in Belarus and is the
+        administrative centre of Minsk Region and Minsk District. In june 2009 population was 1,455,825. As of
+        January 2021, its population was 2,009,786 making Minsk the 11th most populous city in Europe.
+        <br />
+        <br />
+        Minsk is the administrative capital of the Commonwealth of Independent States (CIS) and seat of its
+        Executive Secretary. The earliest historical references to Minsk date to the 11th century (1067), when it
+        was noted as a provincial city within the Principality of Polotsk. In 1242, Minsk became part of the Grand
+        Duchy of Lithuania. It received town privileges in 1499. From 1569, it was a capital of the Minsk
+        Voivodeship, in the Polish–Lithuanian Commonwealth. It was part of a region annexed by the Russian Empire
+        in 1793, as a consequence of the Second Partition of Poland. From 1919 to 1991, after the Russian
+        Revolution, Minsk was the capital of the Belorussian Soviet Socialist Republic, in the Soviet Union. In
+        June 2019, Minsk hosted the 2019 European Games.
+      </p>
+      <h2>Create with us!</h2>
+      <p class="shadow decorationParagraph">
+        Together we can achieve heights in the business field. Minsk city has a great potential for trading and
+        industry.
+      </p>
+      <div class="cityEvents">
+        <h2>Events</h2>
+        <section class="shadow decorationParagraph">
+          <h3 class="cityEventsFirsth3">December 14: Museum of the History of Belarusian Cinema</h3>
+          <p>
+            Presentation of the jubilee exhibition in connection with the 85th anniversary of the birth of the
+            famous Belarusian film director, People's Artist of the USSR and the BSSR.
+          </p>
+          <p>Time: 3pm and 6.30pm</p>
+        </section>
+        <section class="shadow decorationParagraph">
+          <h3>December 15: Exhibition "Movement" at the National Library of Belarus</h3>
+          <p>
+            The exposition includes works by famous and young Belarusian authors from Minsk and the regions of
+            Belarus, who are now actively working in the field of conceptual art, and avant-garde paintings of the
+            1980s and early 1990s from the collection of the Belarusian Union of Artists.
+          </p>
+          <p>Time: 5pm</p>
+        </section>
+        <section class="shadow decorationParagraph">
+          <h3>December 16: Exhibition "My World in Colors" at the University of Culture</h3>
+          <p>
+            The exhibition is aimed at popularizing the creativity of disabled people and drawing public attention
+            to their problems. Visitors will be able to see more than 40 works written by people with disabilities
+            who visit the social service institutions of the State Institution "Krupskiy Territorial Center for
+            Social Services for the Population" and the State Institution "Nesvizh District Territorial Center for
+            Social Services for the Population". The project was organized by the Committee for Labor, Employment
+            and Social Protection of the Minsk City Executive Committee in conjunction with the art gallery
+            "University of Culture".
+          </p>
+          <p>Time: 11am-7pm</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; All rights reserved</p>
+      <p>
+        The wheather summary provided by
+        <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> source.
+      </p>
+      <p>Last Updated: <span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+  </body>
+</html>

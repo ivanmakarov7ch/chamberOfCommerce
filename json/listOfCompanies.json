@@ -1,0 +1,39 @@
+{
+  "localBusiness": [
+    {
+      "name": "Wargaming",
+      "photo": "d_wargaming.png",
+      "website": "https://wargaming.com/en/"
+    },
+    {
+      "name": "Rakuten Viber",
+      "photo": "d_rakutenviber.png",
+      "website": "https://wargaming.com/en/"
+    },
+    {
+      "name": "Life",
+      "photo": "d_life.png",
+      "website": "https://life.com.by/"
+    },
+    {
+      "name": "Beltelecom",
+      "photo": "d_beltelecom.png",
+      "website": "https://beltelecom.by/"
+    },
+    {
+      "name": "Eurotrade",
+      "photo": "d_euroopt.png",
+      "website": "https://evroopt.by/"
+    },
+    {
+      "name": "Voka",
+      "photo": "d_voka.png",
+      "website": "https://voka.tv/"
+    },
+    {
+      "name": "Lidskae",
+      "photo": "d_lidskae.png",
+      "website": "https://lidskae.by/en/products/kvass/"
+    }
+  ]
+}

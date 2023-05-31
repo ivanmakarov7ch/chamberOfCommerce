@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Makarov Ivan in WDD 230:
+                                    Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="js/script.js" defer></script>
+    <script src="js/lazyloading.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-commerce.png" alt="The MChamber of Commerce logo" />
+      <section class="headings">
+        <h1>Welcom to our Chamber of Commerce</h1>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="contactGrid">
+        <form class="FormContactPage" method="get" action="thanksContact.html">
+          <fieldset id="ContactTopMargin">
+            <legend>Contact Us</legend>
+            <label class="top" for="name"
+              >Your Name <input id="name" type="text" pattern="[A-Za-z\s]{3,}"
+            /></label>
+            <label class="top" for="phone"
+              >Phone number <input id="phone" type="tel" pattern="[0-9]{6,15}"
+            /></label>
+            <label class="top" for="email"
+              >Email*
+              <input
+                id="email"
+                type="email"
+                placeholder="example@gmail.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+            /></label>
+            <label class="top" for="contactComent">A comment</label>
+            <textarea name="contactComent" id="contactComent" cols="36" rows="10"></textarea>
+            <p>NOTE: After clicking on the button you will reduce on another page</p>
+            <input class="submitBtmContact" type="submit" value="let us know" />
+          </fieldset>
+        </form>
+        <section class="contactGridSecondSection">
+          <div class="shadow">
+            <h2 class="ContactMarginToph2 orangeWhite">List of the board of directors</h2>
+            <p class="orangeWhite">
+              Viktor Kremenchug - Gen Director <br />Ivan Prodolsky - Secretary <br />Egor Salomoikin - Directror
+              of Logistics <br />Sergey Chijovka - Community Relations<br />Serafim Podoliako - Manager of Trade
+            </p>
+          </div>
+          <h2 class="orangeWhite shadow">
+            You can use the map that <br />
+            look up where we are
+          </h2>
+          <iframe
+            id="contactPageMap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.5450440001323!2d27.56439011513114!3d53.92206003913353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcf9c725cc607%3A0x6ae9a8650ce58a49!2svulica%20Viery%20Charu%C5%BEaj%2022%2C%20Minsk!5e0!3m2!1sen!2sby!4v1639556496037!5m2!1sen!2sby"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="orangeWhite shadow"
+          ></iframe>
+          <div class="orangeWhite shadow">
+            <h3 class="testMarginPadding">Phones</h3>
+            <p class="testMarginPadding">&#9743; +375(25)777-88-00 :)</p>
+            <p class="testMarginPadding">&#9743; +375(44)777-88-00 A1</p>
+            <p class="testMarginPadding">&#9743; +375(29)777-88-00 MTC</p>
+            <h3 class="testMarginPadding">Email</h3>
+            <p class="testMarginPadding">&#128231;minskcoc@gov.by</p>
+          </div>
+          <p class="contactPar orangeWhite">
+            <a href="https://www.facebook.com" target="_blank"
+              ><img src="images/ico_facebook_50.png" alt="facebook" class="grid-img grid-p" /></a
+            ><a href="https://www.instagram.com" target="_blank"
+              ><img src="images/ico_instagram_50.png" alt="instagram" class="grid-img grid-p" /></a
+            ><a href="https://twitter.com/" target="_blank"
+              ><img src="images/ico_twitter_50.png" alt="twitter" class="grid-img grid-p"
+            /></a>
+          </p>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; All rights reserved</p>
+      <p>
+        The wheather summary provided by
+        <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> source.
+      </p>
+      <p>Last Updated: <span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Makarov Ivan in WDD 230:
+                                    Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>Join</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-commerce.png" alt="The MChamber of Commerce logo" />
+      <section class="headings">
+        <h1>Welcom to our Chamber of Commerce</h1>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <form class="FormJoinPage" method="get" action="thanksJoin.html">
+        <fieldset id="joinTopMargin">
+          <legend>Personal Information</legend>
+          <label class="top" for="firstname"
+            >First Name* <input id="firstname" type="text" pattern="[A-Za-z\s]{3,}" required
+          /></label>
+          <label class="top" for="lastname"
+            >Last Name* <input id="lastname" type="text" pattern="[A-Za-z\s]{4,}" required
+          /></label>
+          <label class="top" for="title">Title <input id="title" type="text" pattern="[A-Za-z\s]" /></label>
+          <label class="top" for="email"
+            >Email*
+            <input
+              id="email"
+              type="email"
+              placeholder="example@gmail.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              required
+          /></label>
+          <label class="top" for="phone">Phone number <input id="phone" type="tel" pattern="[0-9]{6,15}" /></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Business Information</legend>
+          <label class="top" for="bname"
+            >Business Name* <input id="bname" type="text" pattern="[A-Za-z\s]{5,}" required
+          /></label>
+          <label class="top" for="businessAddress"
+            >Business Address <input id="businessAddress" type="text"
+          /></label>
+          <label class="top" for="zcode">Zip Code <input id="zcode" type="number" /></label>
+          <label class="top" for="website"
+            >Business website <input id="website" type="url" name="url" placeholder="http://"
+          /></label>
+          <label class="top" for="businessDescription">Business description</label>
+          <textarea name="coments" id="businessDescription" cols="36" rows="10"></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Membership level selection</legend>
+          <p>
+            Here you need to choose of what type of level membership you want. Fees are collected every year which
+            gives you some benefit. <br />
+            <br />
+            There are four options: Non-profit ($100), Bronze ($200), Silver ($400), Gold ($1000). <br />
+            <br />
+            The different levels have different perks. Things like directory listings, business training, social
+            media posts, luncheon tickets, sponsorships with levels of advertising, etc.
+          </p>
+          <label class="top"
+            >Level Membership
+            <select name="levelMembership">
+              <option value="">Select level &#9662;</option>
+              <option value="preston">Non-profit</option>
+              <option value="sodaSprings">Bronze</option>
+              <option value="fishHaven">Silver</option>
+              <option value="fishHaven">Gold</option>
+            </select>
+          </label>
+        </fieldset>
+        <input class="submitBtmJoin" type="submit" value="Join to us!" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy; All rights reserved</p>
+      <p>
+        The wheather summary provided by
+        <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> source.
+      </p>
+      <p>Last Updated: <span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+  </body>
+</html>

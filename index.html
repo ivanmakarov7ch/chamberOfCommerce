@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Assignment portal for Makarov Ivan in WDD 230:
+                                    Web Frontend Development at Brigham Young University - Idaho"
+    />
+    <title>The Minsk Chamber of Commerce - Minsk, Belarus</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="js/script.js" defer></script>
+    <script src="js/weatherAPI.js" defer></script>
+    <script src="js/windchill.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo-commerce.png" alt="The MChamber of Commerce logo" />
+      <section class="headings">
+        <h1>Welcom to our Chamber of Commerce</h1>
+      </section>
+    </header>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="city.html">City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="heroImg">
+        <img
+          class="imgWidth"
+          src="images/heroImg_1600x900_medium.jpg"
+          alt="The city photo"
+          sizes="100vw"
+          srcset="
+            images/heroImg_2560x1440_large.jpg 2560w,
+            images/heroImg_1600x900_medium.jpg 1600w,
+            images/heroImg_1280x720_small.jpg   720w
+          "
+        />
+        <section class="heroStats">
+          <h2>Wheather Summary</h2>
+          <p>Currently: <span id="currently"></span></p>
+          <p>Hight: <span id="temperature"></span>&#176;&#8450;</p>
+          <div>
+            Wind Chill: <span><span id="windChill"></span>&#176;&#8450;</span>
+          </div>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind Speed: <span id="windSpeed"></span>kph</p>
+        </section>
+        <button onclick="document.location='join.html'" type="button" class="heroButton">Join</button>
+      </div>
+      <h2>3 Day Forecast</h2>
+      <section id="weatherforecast"></section>
+      <h2>Our Goals</h2>
+      <p class="decorationParagraph shadow">
+        The MCC members are successful organizations that find it important and are interested in developing their
+        business. Join us you can learn from somebody and teach others. You will earn a lot of experience in
+        meeting other business partners and exchanging knowledge. It is much easier with us.
+      </p>
+      <h2>Local Company Advertisement</h2>
+      <div class="adverGrid">
+        <section class="shadow grid-company1">
+          <img src="images/minsktrans_525x140.jpg" alt="store" />
+          <p class="decorationParagraph">
+            Want to promote your services? contact us! You can place your advertisement in our vehicles both in the
+            form of posters and on TV. Additional information can be found by clicking on the
+            <a href="https://minsktrans.by/" target="_blank">link</a>.
+          </p>
+        </section>
+        <section class="shadow grid-company2">
+          <img src="images/21vek_525x140.jpg" alt="store" />
+          <p class="decorationParagraph">
+            Do you want to please yourself or your loved ones with a new technique? You can do it now! Buy by
+            installments without income certificates and without guarantors. Additional information can be found by
+            clicking on the <a href="https://21vek.by/" target="_blank">link</a>.
+          </p>
+        </section>
+        <section class="shadow grid-company3">
+          <img src="images/belavia_525x140.jpg" alt="store" />
+          <p class="decorationParagraph">
+            Tired of staying at home in pandemic conditions or do you miss the sun on these cold days? We will find
+            you cheap flights to warmer countries! Additional information can be found by clicking on the
+            <a href="https://en.belavia.by/" target="_blank">link</a>.
+          </p>
+        </section>
+      </div>
+      <h2>Events</h2>
+      <div class="homeEventsGrid">
+        <p class="homeEventsGridCellDate">December 16</p>
+        <p class="homeEventsGridCellName">Online meeting "Belarus - Cuba: prospects for bilateral cooperation"</p>
+        <p class="homeEventsGridCellParticipate">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeJstoNZzfS696EUlx6PDtWtDOfvI9xTHy1A4QoS7fy6ousCg/viewform"
+            target="_blank"
+            >Participate</a
+          >
+        </p>
+
+        <p class="homeEventsGridCellDate">December 19-22</p>
+        <p class="homeEventsGridCellName">Business visit to Serbia</p>
+        <p class="homeEventsGridCellParticipate">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeJstoNZzfS696EUlx6PDtWtDOfvI9xTHy1A4QoS7fy6ousCg/viewform"
+            target="_blank"
+            >Participate</a
+          >
+        </p>
+
+        <p class="homeEventsGridCellDate">December 17-20</p>
+        <p class="homeEventsGridCellName">Specialized business visit to the Republic of Poland</p>
+        <p class="homeEventsGridCellParticipate">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeJstoNZzfS696EUlx6PDtWtDOfvI9xTHy1A4QoS7fy6ousCg/viewform"
+            target="_blank"
+            >Participate</a
+          >
+        </p>
+      </div>
+
+      <section class="contactHomeSection shadow homeContactGrid">
+        <h2 class="grid-part1">Our Contacts</h2>
+        <div class="grid-part2">
+          <h3>Phones</h3>
+          <p>&#9743; +375(25)777-88-00 :)</p>
+          <p>&#9743; +375(44)777-88-00 A1</p>
+          <p>&#9743; +375(29)777-88-00 MTC</p>
+          <h3>Email</h3>
+          <p>&#128231;minskcoc@gov.by</p>
+        </div>
+        <div class="grid-part3">
+          <h3>Address</h3>
+          <p>220123, Minsk, Vera Horuzhei street 22</p>
+          <h3>Social</h3>
+          <p>
+            <a href="https://www.facebook.com" target="_blank"
+              ><img src="images/ico_facebook_50.png" alt="facebook" class="grid-img grid-p" /></a
+            ><a href="https://www.instagram.com" target="_blank"
+              ><img src="images/ico_instagram_50.png" alt="instagram" class="grid-img grid-p" /></a
+            ><a href="https://twitter.com/" target="_blank"
+              ><img src="images/ico_twitter_50.png" alt="twitter" class="grid-img grid-p"
+            /></a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; All rights reserved</p>
+      <p>
+        The wheather summary provided by
+        <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap</a> source.
+      </p>
+      <p>Last Updated: <span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontloader.js"></script>
+  </body>
+</html>
